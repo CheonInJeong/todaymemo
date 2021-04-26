@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cafe24.todaymemo.dao.CategoryMapper">
+	<resultMap type="CategoryDTO" id="categoryResultMap">
+		<result property="menuIdx" 				column="menu_idx"/>
+		<result property="menuName" 				column="menu_name"/>
+		<result property="menuUrl" 					column="menu_url"/>
+		<result property="menuSort" 				column="menu_sort"/>
+		<result property="menuYn" 				    column="menu_yn"/>
+		<result property="menuRegId" 				column="menu_reg_id"/>
+		<result property="menuRegDate" 				column="menu_reg_date"/>
+	</resultMap>
+	
+
+	<insert id="addCategory" parameterType="CategoryDTO">
+		INSERT INTO 
+		tb_category
+			( menu_name, menu_url, menu_reg_id, menu_reg_date)
+		VALUES (#{menuName},sf_url(#{menuRegId}), #{menuRegId}, now());
+	</insert>
+	
+	<select id="getCategoryList" resultMap="categoryResultMap">
+		SELECT 
+			menu_idx, menu_name, menu_url, menu_sort, menu_yn, menu_reg_id, menu_reg_date
+		FROM 
+			tb_category where menu_reg_id=#{id}
+	</select>
+	
+</mapper>

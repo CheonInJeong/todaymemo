@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.tyhmeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="layout/default">
+
+		<th:block layout:fragment="customTitle">
+			<title>프로젝트 소개</title>
+		</th:block>
+		<th:block layout:fragment="Contents">
+		  <!--main content start-->
+			내용
+			
+		<div>[[${session.SID}]]</div>
+			<div>[[${session.SNAME}]]</div>
+			
+			
+			<a th:if="${session.SID==null}" th:href="@{/member/signUp}">가입하기</a>
+			<a th:if="${session.SID==null}" th:href="@{/member/login}">로그인</a>
+			
+			<form th:action="@{/member/logout}" method="post" th:if="${session.SID!=null}">
+				<button type="submit">로그아웃</button>
+			</form>
+            
+		</div>
+		</th:block>
+		<th:block layout:fragment="customScript">
+		</th:block>
+</html>

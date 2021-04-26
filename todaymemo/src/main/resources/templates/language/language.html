@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.tyhmeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="layout/default">
+
+		<th:block layout:fragment="customTitle">
+			<title>프로젝트 소개</title>
+		</th:block>
+		<th:block layout:fragment="Contents">
+		<span id="day"></span>
+		<form th:action="@{/language/addLanguage}" method="post">
+			<input type="text" name="langWord">
+			<input type="text" name="langMeaning">
+			<input type="text" name="langEtc">
+			<button type="button" id="addLanguageBtn">등록</button>
+		</form>
+		<table class="table table-hover"> 
+			<thead>
+				<tr>
+					<th>요일</th>
+					<th>단어/문장</th>
+					<th>뜻</th>
+					<th>메모</th>
+					<th>수정</th>
+					<th>삭제</th>
+				</tr>
+			</thead>	
+			<tbody id="languageBody">
+			<tr th:if="${#lists.size(word)}>0" th:each="word:${word}">
+				<td th:text ="${word.langRegDate}"></td>
+				<td th:text ="${word.langWord}" class="word"></td>
+				<td th:text ="${word.langMeaning}" class="meaning"></td>
+				<td th:text ="${word.langEtc}" class="memo"></td>
+				<td th:text ="${word.langIdx}" class="idx"></td>
+				<td><i class="glyphicon glyphicon-erase modifyBtn" data-attr="0"></i></td>
+				<td><i class="glyphicon glyphicon-trash"></i></td>
+			</tr>
+			<tr th:unless="${#lists.size(word)}>0">
+				<td colspan="6">외울 단어가 없습니다.</td>
+			</tr>
+			</tbody>
+		</table>
+			
+		</th:block>
+		<th:block layout:fragment="customScript">
+			<script th:inline="javascript">
+				var categoryIdx = /*[[${categoryIdx}]]*/
+				$(document).ready(function(){
+					console.log(categoryIdx);
+				})
+			
+				$('#addLanguageBtn').click(function(){
+					$.ajax({
+						url :'/ajax/addLanguage',
+						type : 'post',
+						data : {word : $('input[name=langWord]').val(),
+								meaning : $('input[name=langMeaning]').val(), 
+								memo : $('input[name=langEtc]').val(),
+								categoryIdx : categoryIdx},
+						success : function(data){
+							console.log(data);
+							location.reload();
+						}
+					})
+				})
+			
+			$(document).on('click','#calendar div',function(){
+				var day = $(this).attr('data-day');
+				$('#day').text('');
+				$('#day').text(day+'일');
+				
+			 	var date = $(this).attr('data-date');
+			 	console.log(date);
+	 	
+				/*
+				$.ajax({
+					url : "/ajax/pickDate",
+					type : "post",
+					data : {sendDate : date},
+					success : function(data){
+						if(data!=""){
+						$('#languageBody').children().remove();
+						for(var i = 0 ; i<data.length;i++){
+					
+							var tr = '<tr>';
+								tr +='<td style="display:none" class="code">'+data[i].eg_code+'</td>';
+								tr +='<td>'+data[i].reg_date+'</td>';
+								tr +='<td class="word">'+data[i].word+'</td>'
+								tr +='<td class="meaning">'+data[i].meaning+'</td>'
+								tr +='<td class="memo">'+data[i].memo+'</td>'
+								tr +='<td><i class="glyphicon glyphicon-erase modifyBtn" data-attr = "0"></i></td>'
+								tr +='<td><i class="glyphicon glyphicon-trash deleteBtn" ></i></td>'
+								tr +='</tr>';
+						
+							$('#calendarBody').append(tr);
+							
+							
+						}
+					}else{
+						$('#calendarBody').children().remove();
+						var tr = '<tr><td colspan="4">해당일에 입력하신 단어가 없습니다.</td></tr>'
+						$('#calendarBody').append(tr);
+					}
+				}
+					
+				});
+				*/
+		
+		</script>
+		</th:block>
+</html>

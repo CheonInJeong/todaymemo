@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.tyhmeleaf.org">
+<div id="footer" th:fragment="footerFragment">
+		     <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>Dashio</strong>. All Rights Reserved
+        </p>
+        <div class="credits">
+          <!--
+            You are NOT allowed to delete the credit link to TemplateMag with free version.
+            You can delete the credit link only if you bought the pro version.
+            Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
+            Licensing information: https://templatemag.com/license/
+          -->
+          Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>
+        </div>
+        <a href="index.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+          </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="/lib/jquery/jquery.min.js"></script>
+
+  <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="/lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="/lib/jquery.scrollTo.min.js"></script>
+  <script src="/lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="/lib/jquery.sparkline.js"></script>
+  <!--common script for all pages-->
+  <script src="/lib/common-scripts.js"></script>
+  <script type="text/javascript" src="/lib/gritter/js/jquery.gritter.js"></script>
+  <script type="text/javascript" src="/lib/gritter-conf.js"></script>
+  <!--script for this page-->
+  <script src="/lib/sparkline-chart.js"></script>
+  <script src="/lib/zabuto_calendar.js"></script>
+
+	
+	<script>
+	var today = new Date();
+	var date = new Date();
+	function preMonth(){
+		today = new Date(today.getFullYear(), today.getMonth()-1,today.getDate());
+		buildCalendar();
+	}
+	
+	function nextMonth(){
+		today = new Date(today.getFullYear(),today.getMonth()+1,today.getDate());
+		buildCalendar();
+	}
+	function buildCalendar(){
+		var firstDay = new Date(today.getFullYear(), today.getMonth(),1);
+		var lastDay = new Date(today.getFullYear(),today.getMonth()+1,0);
+
+		var writeYM = document.getElementById("writeYM");
+		writeYM.innerHTML = today.getFullYear()+'년'+(today.getMonth()+1)+'월';
+		
+	
+		var calendar = document.getElementById("calendar");
+		
+		
+		while (calendar.rows.length > 2) {
+	     	calendar.deleteRow(calendar.rows.length-1);
+	             
+	     }
+		
+		var row = null;
+		row = calendar.insertRow();
+		
+		var cnt = 0;
+		//1일과 해당요일을 매치해줌. 없으면 1일이 무조건 일요일부터 시작
+		for(i=0; i<firstDay.getDay(); i++){
+			cell = row.insertCell();
+			cnt +=1;
+			
+		}
+		
+		 for (i=1; i<=lastDay.getDate(); i++){
+			
+			cell = row.insertCell();
+	
+			if((today.getMonth()+1)<10){
+				
+				if(i<10){
+					cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-0'+(today.getMonth()+1)+'-0'+i+'\">'+i+'</div>'
+				}else{
+					cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-0'+(today.getMonth()+1)+'-'+i+'\">'+i+'</div>';
+				}
+			}else{
+			
+				if(i<10){
+					cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-0'+(today.getMonth()+1)+'-'+i+'\">'+i+'</div>'
+				}else{
+					cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-'+(today.getMonth()+1)+'-'+i+'\">'+i+'</div>';
+				}
+			}		
+			cnt +=1;
+		
+			if(cnt%7==1){
+				if((today.getMonth()+1)<10){
+					if(i<10){
+						cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-0'+(today.getMonth()+1)+'-0'+i+'\">'+i+'</div>'
+					}else{
+						cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-0'+(today.getMonth()+1)+'-'+i+'\">'+i+'</div>';
+					}
+				}else{
+					if(i<10){
+						cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-0'+(today.getMonth()+1)+'-'+i+'\">'+i+'</div>'
+					}else{
+						cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-'+(today.getMonth()+1)+'-'+i+'\">'+i+'</div>';
+					}
+				}
+				
+
+			}
+	
+			if(cnt%7 ==0){
+				if((today.getMonth()+1)<10){
+					if(i<10){
+						cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-0'+(today.getMonth()+1)+'-0'+i+'\">'+i+'</div>'
+					}else{
+						cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-0'+(today.getMonth()+1)+'-'+i+'\">'+i+'</div>';
+					}
+				}else{
+					if(i<10){
+						cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-0'+(today.getMonth()+1)+'-'+i+'\">'+i+'</div>'
+					}else{
+						cell.innerHTML = '<div data-day = \"'+i+'\" data-date = "'+today.getFullYear()+'-'+(today.getMonth()+1)+'-'+i+'\">'+i+'</div>';
+					}
+				}
+			row = calendar.insertRow();
+		
+		 }
+			
+	
+			if(today.getFullYear() == date.getFullYear()
+	                 && today.getMonth() == date.getMonth()
+	                 && i == date.getDate()){
+		
+				cell.bgColor = '#FAF58C';
+				cell.style.borderRadius = '50%';
+				$('#day').text(i+'일');
+		
+			}
+			
+			cell.align = "center";
+			cell.valign = "middle"; 
+		 }	
+	}
+
+
+	
+		$(document).ready(function(){
+			buildCalendar();
+		})
+	
+  	 	$(document).on('click','#addBtn',function(){
+   		console.log(this);
+   	
+   		window.open('/language/addCategory', '카테고리추가');
+   	})	
+   	
+   	
+  	 </script>
+   
+	<!--자용자 정의 Script 추가 -->
+  <th:block layout:fragment="customScript"> </th:block>	
+ 		    
+</div>
+</html>
