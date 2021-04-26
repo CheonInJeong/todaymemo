@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cafe24.todaymemo.dao.MemberMapper">
+	<resultMap type="MemberDTO" id="memberResultMap">
+		<result property="memberId" 				column="member_id"/>
+		<result property="memberPw" 				column="member_pw"/>
+		<result property="memberName" 				column="member_name"/>
+		<result property="memberLevel" 				    column="member_level"/>
+		<result property="memberEmail" 				column="member_email"/>
+		<result property="memberPhoto" 				column="member_photo"/>
+		<result property="memberPhone" 				column="member_phone"/>
+		<result property="memberRegDate" 			column="member_reg_date"/>
+	</resultMap>
+	
+	<select id="getMemberInfo" resultMap ="memberResultMap">
+		SELECT 
+			member_id, member_pw, member_level, member_name
+		FROM tb_member
+	</select>
+	<!-- 회원가입 -->
+	<insert id="signUp" parameterType="MemberDTO">
+		INSERT INTO tb_member
+	(member_id, member_pw, member_name, member_email, member_phone, member_photo, member_level, member_reg_date)
+	VALUES (#{memberId}, #{memberPw}, #{memberName},#{memberEmail}, #{memberPhone}, #{memberPhoto}, 2, NOW())
+	</insert>
+	
+	
+</mapper>

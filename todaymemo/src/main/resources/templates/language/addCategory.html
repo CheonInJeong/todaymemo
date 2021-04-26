@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.tyhmeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:href="@{/category/addCategory}" method="post">
+		<input type="text" name="menuName">
+		<input type="hidden" name="menuRegId" th:value="${session.SID}">
+		<input type="submit" value="추가">
+	</form>
+	
+</body>
+</html>

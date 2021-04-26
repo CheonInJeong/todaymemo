@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.tyhmeleaf.org"
+ 	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="@{layout/default}">
+
+<div th:fragment="addLanguage">
+	<form th:action="@{/language/addLanguage}">
+		<input type="text" name="langWord">
+		<input type="text" name="langMeaning">
+		<input type="text" name="langEtc">
+		<button type="submit">등록</button>
+	</form>
+</div>

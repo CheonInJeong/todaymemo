@@ -1,0 +1,278 @@
+00:07:45.000 [http-nio-8090-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+841. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =12
+		and 
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day) ;
+ {executed in 6 msec}
+00:14:56.854 [http-nio-8090-exec-7] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+841. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =12
+		and 
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day) ;
+ {executed in 6 msec}
+00:15:07.608 [http-nio-8090-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+841. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and 
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day) ;
+ {executed in 2 msec}
+00:15:10.690 [http-nio-8090-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+841. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =12
+		and 
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day) ;
+ {executed in 1 msec}
+00:17:08.252 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_271 on cheon-injeong-ui-MacBook-Air.local with PID 1544 (/Users/INJEONG/git/todaymemo/todaymemo/target/classes started by INJEONG in /Users/INJEONG/git/todaymemo/todaymemo)
+00:17:08.255 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+00:17:10.078 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 2.347 seconds (JVM running for 14530.612)
+00:17:10.170 [http-nio-8090-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+861. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =12
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 4 msec}
+00:17:24.521 [http-nio-8090-exec-4] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+861. SELECT 
+			member_id, member_pw, member_level, member_name
+		FROM tb_member
+ {executed in 5 msec}
+00:17:24.535 [http-nio-8090-exec-4] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+861. SELECT 
+			menu_idx, menu_name, menu_url, menu_sort, menu_yn, menu_reg_id, menu_reg_date
+		FROM 
+			tb_category where menu_reg_id='id001'
+ {executed in 6 msec}
+00:17:34.063 [http-nio-8090-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+861. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+00:17:37.176 [http-nio-8090-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+861. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =12
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 2 msec}
+00:20:36.524 [http-nio-8090-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+861. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =12
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 12 msec}
+00:22:14.678 [http-nio-8090-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+861. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =12
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 9 msec}
+00:26:17.501 [http-nio-8090-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+861. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =12
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 13 msec}
+00:28:05.231 [http-nio-8090-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+861. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =12
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 3 msec}

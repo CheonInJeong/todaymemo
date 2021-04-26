@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cafe24.todaymemo.dao.LanguageMapper">
+
+	<resultMap type="LanguageDTO" 	id="languageResultMap">
+		<result property="langIdx" 				column="lang_idx"/>
+		<result property="langWord" 			column="lang_word"/>
+		<result property="langMeaning" 			column="lang_meaning"/>
+		<result property="langEtc" 			    column="lang_etc"/>
+		<result property="categoryIdx" 			column="category_idx"/>
+		<result property="langRegId" 			column="lang_reg_id"/>
+		<result property="langRegDate" 			column="lang_reg_date"/>
+	</resultMap>
+	
+	<insert id="addLanguage" parameterType="LanguageDTO">
+		insert 
+		into 
+			tb_language(lang_word, lang_meaning, lang_etc, category_idx, lang_reg_id, lang_reg_date) 
+		values
+			(#{langWord},#{langMeaning},#{langEtc},#{categoryIdx},#{langRegId},curdate())
+	
+	</insert>
+	
+	<!-- 당일 등록한 단어-->
+	<select id="getToday" parameterType="map" resultMap="languageResultMap">
+		SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = #{id}
+		and 
+			category_idx =#{categoryIdx}
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+	</select>
+	
+</mapper>
