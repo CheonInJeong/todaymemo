@@ -1,5 +1,7 @@
 package com.cafe24.todaymemo.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
@@ -23,6 +25,13 @@ public class LanguageController {
 			this.languageService = languageService;
 		}
 	
+		@RequestMapping(value="/ajax/pickDate" , method= RequestMethod.POST)
+		public @ResponseBody List<LanguageDTO> getPickdDateLanguageList(@RequestParam(value="categoryIdx") int categoryIdx,
+																		@RequestParam(value="pickDate") String pickDate,
+																		HttpSession session){
+			
+			return languageService.getPickDate((String)session.getAttribute("SID"), categoryIdx,pickDate);
+		}
 		@RequestMapping(value="/ajax/addLanguage", method= RequestMethod.POST)
 		public @ResponseBody String addLanguage(@RequestParam(value="word") String word,
 												@RequestParam(value="meaning") String meaning,

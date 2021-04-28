@@ -29,9 +29,9 @@ public class CommonController {
 		return "/language/addCategory";
 	}
 	@GetMapping("/")
-	public String main() {
+	public String index() {
 		
-		return "main";
+		return "index";
 	}
 	
 }
