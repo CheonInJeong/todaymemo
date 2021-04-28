@@ -25,6 +25,30 @@ public class LanguageController {
 			this.languageService = languageService;
 		}
 	
+		//단어삭제
+		@GetMapping("/language/deleteLanguage")
+		public String deleteLanguage(@RequestParam(value="langIdx") int langIdx) {
+			languageService.deleteLanguage(langIdx);
+			return "redirect:/";
+		}
+		
+		//단어수정
+		@RequestMapping(value="/ajax/modifyLanguage", method=RequestMethod.POST)
+		public @ResponseBody String modifyLanguage(@RequestParam(value="modifyWord") String modifyWord,
+												   @RequestParam(value="modifyMeaning") String modifyMeaning,
+												   @RequestParam(value="modifyMemo") String modifyMemo,
+												   @RequestParam(value="langIdx") int langIdx) {
+			System.out.println(modifyWord+"<-modifyWord");
+			System.out.println(modifyMeaning+"<-modifyMeaning");
+			System.out.println(modifyMemo+"<-modifyMemo");
+			System.out.println(langIdx+"<-langIdx");
+			
+			languageService.modifyLanguage(modifyWord, modifyMeaning, modifyMemo, langIdx);
+			
+			
+			return "성공";
+		}
+		
 		@RequestMapping(value="/ajax/pickDate" , method= RequestMethod.POST)
 		public @ResponseBody List<LanguageDTO> getPickdDateLanguageList(@RequestParam(value="categoryIdx") int categoryIdx,
 																		@RequestParam(value="pickDate") String pickDate,

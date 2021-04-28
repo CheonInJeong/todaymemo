@@ -10,7 +10,14 @@ import com.cafe24.todaymemo.dto.LanguageDTO;
 @Mapper
 public interface LanguageMapper {
 	
+	//단어 삭제
+	public int deleteLanguage(int langIdx);
 	
+	//단어 수정
+	public int modifyLanguage(@Param(value="word") String word,
+							  @Param(value="meaning") String meaning,
+							  @Param(value="memo") String memo,
+							  @Param(value="idx") int idx);
 	//단어 추가
 	public int addLanguage(LanguageDTO languageDTO);
 

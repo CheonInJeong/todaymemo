@@ -10,18 +10,6 @@
 		  <!--main content start-->
 			내용
 			
-		<div>[[${session.SID}]]</div>
-			<div>[[${session.SNAME}]]</div>
-			
-			
-			<a th:if="${session.SID==null}" th:href="@{/member/signUp}">가입하기</a>
-			<a th:if="${session.SID==null}" th:href="@{/member/login}">로그인</a>
-			
-			<form th:action="@{/member/logout}" method="post" th:if="${session.SID!=null}">
-				<button type="submit">로그아웃</button>
-			</form>
-            
-		</div>
 		</th:block>
 		<th:block layout:fragment="customScript">
 		</th:block>
