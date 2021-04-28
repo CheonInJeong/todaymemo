@@ -6,16 +6,16 @@
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
-      <a th:href="@{/}" class="logo"><b>KSMART<span>SOLAR</span></b></a>
+      <a th:href="@{/}" class="logo"><b>TODAY<span>MEMO</span></b></a>
       <!--logo end-->
       <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
-        <ul class="nav top-menu">
+        <ul class="nav top-menu" style="float:left!important;" >
           <!-- notification dropdown start-->
           <!-- <li id="header_notification_bar" class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
               <i class="fa fa-bell-o"></i>
-              세션에 넣어둔값을 이용
+
               <span class="badge bg-warning">0</span>
               </a>
             <ul class="dropdown-menu extended notification">
@@ -57,7 +57,20 @@
             </ul>
           </li> -->
           <!-- notification dropdown end -->
+          <li th:if="${session.SID!=null}">
+			<div>[[${session.SNAME}]] 님 로그인 중입니다.</div>
+			<form th:action="@{/member/logout}" method="post" >
+				<button type="submit">로그아웃</button>
+			</form>
+          </li>
+		  <li>
+		  	<a th:if="${session.SID==null}" th:href="@{/member/signUp}">가입하기</a>
+		  </li>
+		  <li>
+			<a th:if="${session.SID==null}" th:href="@{/member/login}">로그인</a>
+		  </li>
         </ul>
+        
         <!--  notification end -->
       </div>
     </header>

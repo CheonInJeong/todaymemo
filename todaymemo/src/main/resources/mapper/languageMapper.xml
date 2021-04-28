@@ -13,6 +13,20 @@
 		<result property="langRegDate" 			column="lang_reg_date"/>
 	</resultMap>
 	
+	<delete id="deleteLanguage">
+		DELETE FROM tb_language WHERE lang_idx=#{langIdx}
+	</delete>
+	<update id="modifyLanguage" parameterType="map">
+			UPDATE 
+				tb_language
+			SET
+				lang_word=#{word},
+				lang_meaning=#{meaning},
+				lang_etc=#{memo}
+			WHERE 
+				lang_idx = #{idx}
+	</update>
+	
 	<select id="getPickDate" parameterType="map" resultMap="languageResultMap">
 	
 		SELECT 

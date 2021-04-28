@@ -14,6 +14,15 @@ public class LanguageService {
 	public LanguageService(LanguageMapper languageMapper) {
 		this.languageMapper = languageMapper;
 	}
+	//단어 삭제
+	public void deleteLanguage(int langIdx) {
+		languageMapper.deleteLanguage(langIdx);
+	}
+	
+	//단어 수정
+	public void modifyLanguage(String word, String meaning, String memo, int idx) {
+		languageMapper.modifyLanguage(word, meaning, memo, idx);
+	}
 	
 	//단어 추가
 	public void addLanguage(LanguageDTO languageDTO) {

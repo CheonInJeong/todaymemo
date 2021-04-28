@@ -159,22 +159,8 @@
    		
   	 </script>
    
-   	<script th:inline="javascript">
-		  //세션만료시
-		  $(document).ready(function(){
-			  var session = /*[[${session.SID}]]*/
-			  
-			  if(session==null || session==''){
-				  alert('로그아웃 되었습니다.');
-				  return;
-				  location.href="/";
-			  }
-			 
-		  })
-		  
-   	</script>
 	<!--자용자 정의 Script 추가 -->
-  <th:block layout:fragment="customScript"> </th:block>	
+  <th:block layout:fragment="customScript"></th:block>	
  		    
 </div>
 </html>

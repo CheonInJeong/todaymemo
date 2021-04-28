@@ -4,12 +4,13 @@
 	  layout:decorate="layout/default">
 
 		<th:block layout:fragment="customTitle">
-			<title>프로젝트 소개</title>
+			<title>TODAY MEMO</title>
 		</th:block>
 		
 		<th:block layout:fragment="Contents">
-		
-		<span id="day"></span>
+		<div style="margin:20px;">
+			<span id="day" style="font-size:30px; color:black;" ></span>
+		</div>
 		
 		<!-- 단어 추가  -->
 		<th:block layout:fragment="addLanguage">
@@ -29,14 +30,13 @@
 			</thead>	
 			<tbody id="languageBody">
 			<tr th:if="${#lists.size(word)}>0" th:each="word:${word}">
-				<td th:text ="${word.langIdx}" style="display:none;"></td>
+				<td th:text ="${word.langIdx}" style="display:none;" class="langidx"></td>
 				<td th:text ="${word.langRegDate}"></td>
 				<td th:text ="${word.langWord}" class="word"></td>
 				<td th:text ="${word.langMeaning}" class="meaning"></td>
 				<td th:text ="${word.langEtc}" class="memo"></td>
-				<td th:text ="${word.langIdx}" class="idx"></td>
-				<td><i class="glyphicon glyphicon-erase modifyBtn" data-attr="0"></i></td>
-				<td><i class="glyphicon glyphicon-trash"></i></td>
+				<td><a><i class="glyphicon glyphicon-erase modifyBtn" data-attr="0"></i></a></td>
+				<td><a th:href="@{/language/deleteLanguage(langIdx=${word.langIdx})}"><i class="glyphicon glyphicon-trash deleteBtn"></i></a></td>
 			</tr>
 			<tr th:unless="${#lists.size(word)}>0">
 				<td colspan="6">외울 단어가 없습니다.</td>
@@ -88,8 +88,8 @@
 										tr +='<td class="word">'+data[i].langWord+'</td>'
 										tr +='<td class="meaning">'+data[i].langMeaning+'</td>'
 										tr +='<td class="memo">'+data[i].langEtc+'</td>'
-										tr +='<td><i class="glyphicon glyphicon-erase modifyBtn" data-attr = "0"></i></td>'
-										tr +='<td><i class="glyphicon glyphicon-trash deleteBtn" ></i></td>'
+										tr +='<td><a><i class="glyphicon glyphicon-erase modifyBtn" data-attr = "0"></a></i></td>'
+										tr +='<td><a href="/language/deleteLanguage?langIdx='+data[i].langIdx+'"><i class="glyphicon glyphicon-trash deleteBtn"></i></a></td>'
 										tr +='</tr>';
 								
 									$('#languageBody').append(tr);
@@ -103,7 +103,55 @@
 						
 					});//ajax 끝
 				})
-			</script>
+				
+				$(document).ready(function(){
+					$('.modifyBtn').click(function(){
+						
+						
+						console.log($('.modifyBtn').index(this));
+						var i = $('.modifyBtn').index(this);
+						var word = $('.word');
+						var meaning = $('.meaning');
+						var memo = $('.memo');
+						var idx = $('.langidx');
+				         //data-attr이 0이면 1로 바꿔준다.
+						if($('.modifyBtn').eq(i).attr('data-attr')==0){
+							$('.modifyBtn').eq(i).attr('data-attr','1');
+							//html()을 사용해서, input 박스로 바꿔주고 value 값은 text()를 통해서 가져옴
+							word.eq(i).html('<input type="text" value="'+word.eq(i).text()+'" class="word">');
+							meaning.eq(i).html('<input type="text" value="'+meaning.eq(i).text()+'" class="meaning">');
+							memo.eq(i).html('<input type="text" value="'+memo.eq(i).text()+'" class="memo">');
+						}else{		
+							//수정가능한 상태 data-attr = 1 이면 실행
+							//
+							$('.modifyBtn').eq(i).attr('data-attr','0');
+							var modifyWord = $('#languageBody tr input').eq(0).val();
+							var modifyMeaning = $('#languageBody tr input').eq(1).val();
+							var modifyMemo = $('#languageBody tr input').eq(2).val();
+							
+							console.log(modifyWord)
+							console.log(modifyMeaning)
+							console.log(modifyMemo)
+	
+							word.eq(i).html(modifyWord);
+							meaning.eq(i).html(modifyMeaning);
+							memo.eq(i).html(modifyMemo);
+					       //ajax 비동기 통신
+							 $.ajax({
+				                //컨트롤러로 이동
+								url : '/ajax/modifyLanguage',
+								method :'post',
+								data : {modifyWord:modifyWord, modifyMeaning:modifyMeaning, modifyMemo:modifyMemo, langIdx:idx.eq(i).text()},
+								success : function(data){
+									console.log("성공");
+								}
+							})
+						}	
+					})
+				})
+		
+				
+				</script>
 		
 		
 		</th:block>
