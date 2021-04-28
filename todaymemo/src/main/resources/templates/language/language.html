@@ -6,14 +6,16 @@
 		<th:block layout:fragment="customTitle">
 			<title>프로젝트 소개</title>
 		</th:block>
+		
 		<th:block layout:fragment="Contents">
+		
 		<span id="day"></span>
-		<form th:action="@{/language/addLanguage}" method="post">
-			<input type="text" name="langWord">
-			<input type="text" name="langMeaning">
-			<input type="text" name="langEtc">
-			<button type="button" id="addLanguageBtn">등록</button>
-		</form>
+		
+		<!-- 단어 추가  -->
+		<th:block layout:fragment="addLanguage">
+			<div th:replace="fragments/addLanguage :: addLanguage"></div>
+		</th:block>
+		
 		<table class="table table-hover"> 
 			<thead>
 				<tr>
@@ -27,6 +29,7 @@
 			</thead>	
 			<tbody id="languageBody">
 			<tr th:if="${#lists.size(word)}>0" th:each="word:${word}">
+				<td th:text ="${word.langIdx}" style="display:none;"></td>
 				<td th:text ="${word.langRegDate}"></td>
 				<td th:text ="${word.langWord}" class="word"></td>
 				<td th:text ="${word.langMeaning}" class="meaning"></td>
@@ -43,12 +46,10 @@
 			
 		</th:block>
 		<th:block layout:fragment="customScript">
+		
 			<script th:inline="javascript">
 				var categoryIdx = /*[[${categoryIdx}]]*/
-				$(document).ready(function(){
-					console.log(categoryIdx);
-				})
-			
+				//단어추가 시작
 				$('#addLanguageBtn').click(function(){
 					$.ajax({
 						url :'/ajax/addLanguage',
@@ -61,51 +62,49 @@
 							console.log(data);
 							location.reload();
 						}
-					})
-				})
-			
-			$(document).on('click','#calendar div',function(){
-				var day = $(this).attr('data-day');
-				$('#day').text('');
-				$('#day').text(day+'일');
-				
-			 	var date = $(this).attr('data-date');
-			 	console.log(date);
-	 	
-				/*
-				$.ajax({
-					url : "/ajax/pickDate",
-					type : "post",
-					data : {sendDate : date},
-					success : function(data){
-						if(data!=""){
-						$('#languageBody').children().remove();
-						for(var i = 0 ; i<data.length;i++){
-					
-							var tr = '<tr>';
-								tr +='<td style="display:none" class="code">'+data[i].eg_code+'</td>';
-								tr +='<td>'+data[i].reg_date+'</td>';
-								tr +='<td class="word">'+data[i].word+'</td>'
-								tr +='<td class="meaning">'+data[i].meaning+'</td>'
-								tr +='<td class="memo">'+data[i].memo+'</td>'
-								tr +='<td><i class="glyphicon glyphicon-erase modifyBtn" data-attr = "0"></i></td>'
-								tr +='<td><i class="glyphicon glyphicon-trash deleteBtn" ></i></td>'
-								tr +='</tr>';
-						
-							$('#calendarBody').append(tr);
-							
-							
-						}
-					}else{
-						$('#calendarBody').children().remove();
-						var tr = '<tr><td colspan="4">해당일에 입력하신 단어가 없습니다.</td></tr>'
-						$('#calendarBody').append(tr);
-					}
-				}
-					
+					});
 				});
-				*/
+				//단어추가 끝
+				//해당 날짜 클릭 시 이벤트 시작
+				$(document).on('click','#calendar div',function(){
+					var day = $(this).attr('data-day');
+					$('#day').text('');
+					$('#day').text(day+'일');
+					
+				 	var date = $(this).attr('data-date');
+				 	console.log(date);
+			
+					$.ajax({
+						url : "/ajax/pickDate",
+						type : "post",
+						data : {pickDate : date , categoryIdx : categoryIdx},
+						success : function(data){
+							if(data!=""){
+								$('#languageBody').children().remove();
+								for(var i = 0 ; i<data.length;i++){
+									var tr = '<tr>';
+										tr +='<td style="display:none" class="code">'+data[i].langIdx+'</td>';
+										tr +='<td>'+data[i].langRegDate+'</td>';
+										tr +='<td class="word">'+data[i].langWord+'</td>'
+										tr +='<td class="meaning">'+data[i].langMeaning+'</td>'
+										tr +='<td class="memo">'+data[i].langEtc+'</td>'
+										tr +='<td><i class="glyphicon glyphicon-erase modifyBtn" data-attr = "0"></i></td>'
+										tr +='<td><i class="glyphicon glyphicon-trash deleteBtn" ></i></td>'
+										tr +='</tr>';
+								
+									$('#languageBody').append(tr);
+								}
+							}else{
+								$('#languageBody').children().remove();
+								var tr = '<tr><td colspan="4">해당일에 입력하신 단어가 없습니다.</td></tr>'
+								$('#languageBody').append(tr);
+						}
+					}
+						
+					});//ajax 끝
+				})
+			</script>
 		
-		</script>
+		
 		</th:block>
 </html>

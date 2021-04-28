@@ -15,11 +15,16 @@ public class LanguageService {
 		this.languageMapper = languageMapper;
 	}
 	
+	//단어 추가
 	public void addLanguage(LanguageDTO languageDTO) {
 		languageMapper.addLanguage(languageDTO);
 		
 	}
-	
+	//선택 날짜의 단어 가져오기
+	public List<LanguageDTO> getPickDate(String id, int idx, String pickdate){
+		return languageMapper.getPickDate(id, idx, pickdate);
+	}
+	//당일 날짜의 단어 가져오기 
 	public List<LanguageDTO> getToday(String id, int idx){
 		return languageMapper.getToday(id, idx);
 	}

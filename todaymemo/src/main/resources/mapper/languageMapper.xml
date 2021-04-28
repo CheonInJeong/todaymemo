@@ -13,6 +13,34 @@
 		<result property="langRegDate" 			column="lang_reg_date"/>
 	</resultMap>
 	
+	<select id="getPickDate" parameterType="map" resultMap="languageResultMap">
+	
+		SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = #{id}
+		and 
+			category_idx =#{categoryIdx}
+		and (
+			lang_reg_date = #{pickDate}
+		or
+			lang_reg_date = (#{pickDate} - interval 1 day)
+		or
+			lang_reg_date = (#{pickDate} - interval 3 day)
+		or
+			lang_reg_date = (#{pickDate} - interval 10 day)
+		or
+			lang_reg_date = (#{pickDate} - interval 24 day)
+		or
+			lang_reg_date = (#{pickDate} - interval 54 day)
+		or
+		 	lang_reg_date = (#{pickDate} - interval 144 day)) ;
+	</select>
+	
+
+
 	<insert id="addLanguage" parameterType="LanguageDTO">
 		insert 
 		into 
