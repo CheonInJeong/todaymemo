@@ -35,7 +35,7 @@
 				<td th:text ="${word.langWord}" class="word"></td>
 				<td th:text ="${word.langMeaning}" class="meaning"></td>
 				<td th:text ="${word.langEtc}" class="memo"></td>
-				<td><a class="modifyBtn" data-attr="0"><i class="glyphicon glyphicon-erase" ></i></a></td>
+				<td><a class="modifyBtn"><i class="glyphicon glyphicon-erase" data-attr="0"></i></a></td>
 				<td><a class="deleteBtn"><i class="glyphicon glyphicon-trash"></i></a></td>
 			</tr>
 			<tr th:unless="${#lists.size(word)}>0">
@@ -88,9 +88,10 @@
 										tr +='<td class="word">'+data[i].langWord+'</td>'
 										tr +='<td class="meaning">'+data[i].langMeaning+'</td>'
 										tr +='<td class="memo">'+data[i].langEtc+'</td>'
-										tr +='<td><a class="modifyBtn" data-attr = "0"><i class="glyphicon glyphicon-erase" ></a></i></td>'
+										tr +='<td><a class="modifyBtn"><i class="glyphicon glyphicon-erase" data-attr = "0"></a></i></td>'
 										tr +='<td><a class="deleteBtn"><i class="glyphicon glyphicon-trash"></i></a></td>'
 										tr +='</tr>';
+								
 									$('#languageBody').append(tr);
 								}
 							}else{
@@ -102,22 +103,8 @@
 						
 					});//ajax 끝
 				})
-				</script>
-				<script>
 				//단어수정
 				$(document).ready(function(){
-					
-					/* var modifyBtn =document.getElementsByClassName('modifyBtn');
-					
-					for(var i=0; i<modifyBtn.length; i++){
-						console.log(modifyBtn[i]);
-						modifyBtn[i].addEventListener('click',function(e){
-							console.log(i+"<----i");
-							var langIdx = document.getElementsByClassName('langIdx');
-							console.log(langIdx);
-							console.log(langIdx[i])
-						})
-					} */
 					$('.modifyBtn').click(function(){
 						console.log($('.modifyBtn').index(this));
 						var i = $('.modifyBtn').index(this);
@@ -126,12 +113,6 @@
 						var memo = $('.memo');
 						var idx = $('.langIdx');
 				         //data-attr이 0이면 1로 바꿔준다.
-				         
-				         console.log(word.val());
-				         console.log(meaning.val());
-				         console.log(memo.val());
-				         console.log(idx.val());
-				         
 						if($('.modifyBtn').eq(i).attr('data-attr')==0){
 							$('.modifyBtn').eq(i).attr('data-attr','1');
 							//html()을 사용해서, input 박스로 바꿔주고 value 값은 text()를 통해서 가져옴
@@ -145,11 +126,14 @@
 							var modifyWord = $('#languageBody tr input').eq(0).val();
 							var modifyMeaning = $('#languageBody tr input').eq(1).val();
 							var modifyMemo = $('#languageBody tr input').eq(2).val();
-						
-							console.log(modifyWord+"<----이게 뭔데?")
-							word.eq(i).text(modifyWord);
-							meaning.eq(i).text(modifyMeaning);
-							memo.eq(i).text(modifyMemo);
+							
+							console.log(modifyWord)
+							console.log(modifyMeaning)
+							console.log(modifyMemo)
+	
+							word.eq(i).html(modifyWord);
+							meaning.eq(i).html(modifyMeaning);
+							memo.eq(i).html(modifyMemo);
 					       //ajax 비동기 통신
 							 $.ajax({
 				                //컨트롤러로 이동
@@ -159,14 +143,11 @@
 								success : function(data){
 									console.log("성공");
 								}
-							})//통신끝
+							})
 						}	
-					}) 
+					})
 				})
 				////단어수정끝
-				
-				</script>
-				<script>
 				//단어 삭제 시작
 				 $('.deleteBtn').click(function(){
 					console.log($('.deleteBtn').index(this));
@@ -174,16 +155,6 @@
 					console.log($('.langIdx').eq(i).text());
 					var idx = $('.langIdx').eq(i).text();
 					
-					$.ajax({
-						url:'/ajax/deleteLanguage',
-						method :'post',
-						data : {langIdx:idx},
-						success : function(data){
-							location.reload();
-						}
-					})
-					
-				/*ajax javascript
 					var xhttp;
 					if(window.XMLHttpRequest){
 					    xhttp = new XMLHttpRequest();
@@ -197,14 +168,14 @@
 					xhttp.onreadystatechange = function(){
 						if(xhttp.readyStat == 4 && xhttp.status ==200){
 							//통신 성공 시 구현
-							location.reload();
 							console.log("성공");
+							location.reload();
 						}
 					}
-					xhttp.send()
+					console.log("연결");
 					
-				*/
-				}); 
+					xhttp.send();
+				}) 
 
 				</script>
 		

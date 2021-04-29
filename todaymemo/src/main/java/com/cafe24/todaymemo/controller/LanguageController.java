@@ -26,10 +26,11 @@ public class LanguageController {
 		}
 	
 		//단어삭제
-		@GetMapping("/language/deleteLanguage")
-		public String deleteLanguage(@RequestParam(value="langIdx") int langIdx) {
+		@RequestMapping(value="/ajax/deleteLanguage", method=RequestMethod.GET)
+		public @ResponseBody String deleteLanguage(@RequestParam(value="langIdx") int langIdx) {
+			System.out.println("단어삭제 컨트롤러 확인");
 			languageService.deleteLanguage(langIdx);
-			return "redirect:/";
+			return "단어삭제성공";
 		}
 		
 		//단어수정

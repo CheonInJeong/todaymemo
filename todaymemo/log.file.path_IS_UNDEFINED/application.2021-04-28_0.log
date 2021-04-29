@@ -1,0 +1,3674 @@
+14:59:33.906 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+14:59:33.912 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+14:59:36.526 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 3.016 seconds (JVM running for 3.829)
+15:00:28.312 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			member_id, member_pw, member_level, member_name
+		FROM tb_member
+ {executed in 9 msec}
+15:00:28.487 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			menu_idx, menu_name, menu_url, menu_sort, menu_yn, menu_reg_id, menu_reg_date
+		FROM 
+			tb_category where menu_reg_id='id001'
+ {executed in 2 msec}
+15:00:31.404 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:02:18.379 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:02:19.678 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:04:36.724 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:05:48.608 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:05:49.357 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:05:50.766 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:06:02.128 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:06:03.332 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:06:17.568 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:10:52.987 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:10:55.828 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:11:32.119 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:12:02.039 [http-nio-80-exec-7] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:12:39.888 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:13:36.143 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:13:37.293 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:13:38.575 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:14:30.486 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:16:19.514 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:16:21.918 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-19'
+		or
+			lang_reg_date = ('2021-04-19' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-19' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-19' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-19' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-19' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-19' - interval 144 day)) ;
+ {executed in 0 msec}
+15:16:23.867 [http-nio-80-exec-7] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-21'
+		or
+			lang_reg_date = ('2021-04-21' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-21' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-21' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-21' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-21' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-21' - interval 144 day)) ;
+ {executed in 0 msec}
+15:17:16.278 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:17:17.460 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-13'
+		or
+			lang_reg_date = ('2021-04-13' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-13' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-13' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-13' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-13' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-13' - interval 144 day)) ;
+ {executed in 1 msec}
+15:17:18.106 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-22'
+		or
+			lang_reg_date = ('2021-04-22' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-22' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-22' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-22' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-22' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-22' - interval 144 day)) ;
+ {executed in 1 msec}
+15:18:57.930 [http-nio-80-exec-4] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:19:02.579 [http-nio-80-exec-7] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-26'
+		or
+			lang_reg_date = ('2021-04-26' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-26' - interval 144 day)) ;
+ {executed in 1 msec}
+15:19:05.007 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:19:38.590 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:20:08.508 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:20:44.030 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:21:01.221 [http-nio-80-exec-7] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:24:13.744 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:24:45.391 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:25:44.622 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:49:00.664 [http-nio-80-exec-4] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:53:44.790 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:55:09.854 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:55:41.421 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:55:42.468 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:55:51.916 [http-nio-80-exec-4] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:56:22.430 [http-nio-80-exec-7] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:57:06.286 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+15:57:53.685 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:58:49.975 [http-nio-80-exec-4] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+15. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+15:59:05.547 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. INSERT INTO 
+		tb_category
+			( menu_name, menu_url, menu_reg_id, menu_reg_date)
+		VALUES ('chinese',sf_url('id001'), 'id001', now());
+ {executed in 20 msec}
+15:59:05.548 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			menu_idx, menu_name, menu_url, menu_sort, menu_yn, menu_reg_id, menu_reg_date
+		FROM 
+			tb_category where menu_reg_id='id001'
+ {executed in 0 msec}
+15:59:07.028 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:00:02.194 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. insert 
+		into 
+			tb_language(lang_word, lang_meaning, lang_etc, category_idx, lang_reg_id, lang_reg_date) 
+		values
+			('你好','안녕','nihao',11,'id001',curdate())
+ {executed in 2 msec}
+16:00:02.208 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:00:08.626 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-27'
+		or
+			lang_reg_date = ('2021-04-27' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-27' - interval 144 day)) ;
+ {executed in 0 msec}
+16:00:11.064 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-26'
+		or
+			lang_reg_date = ('2021-04-26' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-26' - interval 144 day)) ;
+ {executed in 1 msec}
+16:00:11.912 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-26'
+		or
+			lang_reg_date = ('2021-04-26' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-26' - interval 144 day)) ;
+ {executed in 1 msec}
+16:00:12.780 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:00:15.266 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-25'
+		or
+			lang_reg_date = ('2021-04-25' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-25' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-25' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-25' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-25' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-25' - interval 144 day)) ;
+ {executed in 0 msec}
+16:00:16.987 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:00:18.497 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-25'
+		or
+			lang_reg_date = ('2021-04-25' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-25' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-25' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-25' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-25' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-25' - interval 144 day)) ;
+ {executed in 1 msec}
+16:00:20.337 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-26'
+		or
+			lang_reg_date = ('2021-04-26' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-26' - interval 144 day)) ;
+ {executed in 1 msec}
+16:00:50.344 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-21'
+		or
+			lang_reg_date = ('2021-04-21' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-21' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-21' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-21' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-21' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-21' - interval 144 day)) ;
+ {executed in 0 msec}
+16:00:51.424 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-23'
+		or
+			lang_reg_date = ('2021-04-23' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-23' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-23' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-23' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-23' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-23' - interval 144 day)) ;
+ {executed in 0 msec}
+16:00:52.203 [http-nio-80-exec-7] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-22'
+		or
+			lang_reg_date = ('2021-04-22' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-22' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-22' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-22' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-22' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-22' - interval 144 day)) ;
+ {executed in 1 msec}
+16:00:54.632 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-01'
+		or
+			lang_reg_date = ('2021-04-01' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-01' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-01' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-01' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-01' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-01' - interval 144 day)) ;
+ {executed in 0 msec}
+16:00:55.712 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-09'
+		or
+			lang_reg_date = ('2021-04-09' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-09' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-09' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-09' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-09' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-09' - interval 144 day)) ;
+ {executed in 0 msec}
+16:00:57.215 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = '2021-04-24'
+		or
+			lang_reg_date = ('2021-04-24' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-24' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-24' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-24' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-24' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-24' - interval 144 day)) ;
+ {executed in 0 msec}
+16:01:29.118 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+16:01:47.293 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 2 msec}
+16:02:47.333 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+16:03:07.446 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:03:51.375 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+16:03:57.701 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:03:58.844 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:17:46.802 [http-nio-80-exec-4] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-80-exec-4] Exception processing template "/member/login": An error happened during template parsing (template: "class path resource [templates//member/login.html]" - line 23, col 65)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//member/login.html]" - line 23, col 65)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.attoparser.ParseException: (Line = 23, Column = 65) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+16:17:46.810 [http-nio-80-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//member/login.html]" - line 23, col 65)] with root cause
+org.attoparser.ParseException: (Line = 23, Column = 65) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+16:17:51.021 [http-nio-80-exec-2] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-80-exec-2] Exception processing template "/member/login": An error happened during template parsing (template: "class path resource [templates//member/login.html]" - line 23, col 65)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//member/login.html]" - line 23, col 65)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.attoparser.ParseException: (Line = 23, Column = 65) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+16:17:51.026 [http-nio-80-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//member/login.html]" - line 23, col 65)] with root cause
+org.attoparser.ParseException: (Line = 23, Column = 65) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+16:17:55.794 [http-nio-80-exec-6] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-80-exec-6] Exception processing template "/member/login": An error happened during template parsing (template: "class path resource [templates//member/login.html]" - line 23, col 65)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//member/login.html]" - line 23, col 65)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.attoparser.ParseException: (Line = 23, Column = 65) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+16:17:55.799 [http-nio-80-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//member/login.html]" - line 23, col 65)] with root cause
+org.attoparser.ParseException: (Line = 23, Column = 65) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+16:44:07.543 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:45:10.408 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			member_id, member_pw, member_level, member_name
+		FROM tb_member
+ {executed in 1 msec}
+16:45:10.410 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			menu_idx, menu_name, menu_url, menu_sort, menu_yn, menu_reg_id, menu_reg_date
+		FROM 
+			tb_category where menu_reg_id='id001'
+ {executed in 1 msec}
+16:47:07.759 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			member_id, member_pw, member_level, member_name
+		FROM tb_member
+ {executed in 0 msec}
+16:47:07.762 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			menu_idx, menu_name, menu_url, menu_sort, menu_yn, menu_reg_id, menu_reg_date
+		FROM 
+			tb_category where menu_reg_id='id001'
+ {executed in 0 msec}
+16:47:11.372 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 2 msec}
+16:47:14.109 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 2 msec}
+16:47:45.260 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+16:48:50.132 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:49:24.908 [http-nio-80-exec-4] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:55:16.608 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+16:55:16.608 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+16:55:17.106 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'languageController' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\controller\LanguageController.class]: Unexpected exception during bean creation; nested exception is java.lang.annotation.AnnotationFormatError: Duplicate annotation for class: interface org.springframework.web.bind.annotation.RequestMapping: @org.springframework.web.bind.annotation.RequestMapping(path=[], headers=[], method=[POST], name=, produces=[], params=[], value=[/ajax/pickDate], consumes=[])
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cafe24.todaymemo.TodaymemoApplication.main(TodaymemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.annotation.AnnotationFormatError: Duplicate annotation for class: interface org.springframework.web.bind.annotation.RequestMapping: @org.springframework.web.bind.annotation.RequestMapping(path=[], headers=[], method=[POST], name=, produces=[], params=[], value=[/ajax/pickDate], consumes=[])
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(Unknown Source)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(Unknown Source)
+	at java.lang.reflect.Executable.declaredAnnotations(Unknown Source)
+	at java.lang.reflect.Executable.declaredAnnotations(Unknown Source)
+	at java.lang.reflect.Executable.getAnnotation(Unknown Source)
+	at java.lang.reflect.Method.getAnnotation(Unknown Source)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.lambda$determineCandidateConstructors$0(AutowiredAnnotationBeanPostProcessor.java:268)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:324)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1201)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	... 20 common frames omitted
+16:58:01.029 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+16:58:01.029 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+16:58:01.585 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.585 seconds (JVM running for 7108.888)
+16:58:23.703 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+16:58:23.703 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+16:58:24.212 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.538 seconds (JVM running for 7131.515)
+16:58:41.914 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+16:58:41.914 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+16:58:42.424 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.537 seconds (JVM running for 7149.728)
+16:58:48.716 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+16:59:04.775 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+16:59:09.073 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+16:59:54.147 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:00:05.035 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			member_id, member_pw, member_level, member_name
+		FROM tb_member
+ {executed in 1 msec}
+17:00:05.038 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			menu_idx, menu_name, menu_url, menu_sort, menu_yn, menu_reg_id, menu_reg_date
+		FROM 
+			tb_category where menu_reg_id='id001'
+ {executed in 1 msec}
+17:00:09.187 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:00:18.852 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+17:01:18.805 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+17:02:08.220 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 2 msec}
+17:02:45.715 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:03:01.131 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:03:07.418 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+17:03:51.060 [http-nio-80-exec-7] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:04:33.240 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:04:33.240 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:04:33.714 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.506 seconds (JVM running for 7501.017)
+17:06:56.377 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:06:56.378 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:06:57.401 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 1.058 seconds (JVM running for 7644.703)
+17:06:59.563 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:06:59.563 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:07:00.063 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.525 seconds (JVM running for 7647.366)
+17:07:53.848 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:07:53.848 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:07:54.332 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commonController' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\controller\CommonController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryService' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\service\CategoryService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryMapper' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\dao\CategoryMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cafe24.todaymemo.TodaymemoApplication.main(TodaymemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryService' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\service\CategoryService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryMapper' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\dao\CategoryMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryMapper' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\dao\CategoryMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 53 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 63 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at com.cafe24.todaymemo.config.MybatisConfig.mybatisSqlSessionFactory(MybatisConfig.java:31)
+	at com.cafe24.todaymemo.config.MybatisConfig$$EnhancerBySpringCGLIB$$1fc13374.CGLIB$mybatisSqlSessionFactory$2(<generated>)
+	at com.cafe24.todaymemo.config.MybatisConfig$$EnhancerBySpringCGLIB$$1fc13374$$FastClassBySpringCGLIB$$a4a4bb3b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.cafe24.todaymemo.config.MybatisConfig$$EnhancerBySpringCGLIB$$1fc13374.mybatisSqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 64 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:263)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:81)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 77 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.addDTDDefaultAttrsAndValidate(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
+	... 80 common frames omitted
+17:09:43.025 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:09:43.026 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:09:43.356 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commonController' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\controller\CommonController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryService' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\service\CategoryService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryMapper' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\dao\CategoryMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cafe24.todaymemo.TodaymemoApplication.main(TodaymemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryService' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\service\CategoryService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryMapper' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\dao\CategoryMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryMapper' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\dao\CategoryMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 53 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 63 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at com.cafe24.todaymemo.config.MybatisConfig.mybatisSqlSessionFactory(MybatisConfig.java:31)
+	at com.cafe24.todaymemo.config.MybatisConfig$$EnhancerBySpringCGLIB$$1fc13374.CGLIB$mybatisSqlSessionFactory$2(<generated>)
+	at com.cafe24.todaymemo.config.MybatisConfig$$EnhancerBySpringCGLIB$$1fc13374$$FastClassBySpringCGLIB$$a4a4bb3b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.cafe24.todaymemo.config.MybatisConfig$$EnhancerBySpringCGLIB$$1fc13374.mybatisSqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 64 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:263)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:81)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 77 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.addDTDDefaultAttrsAndValidate(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
+	... 80 common frames omitted
+17:10:07.127 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:10:07.128 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:10:07.698 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.598 seconds (JVM running for 7835.001)
+17:10:15.801 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:10:15.801 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:10:16.122 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commonController' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\controller\CommonController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryService' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\service\CategoryService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryMapper' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\dao\CategoryMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cafe24.todaymemo.TodaymemoApplication.main(TodaymemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryService' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\service\CategoryService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryMapper' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\dao\CategoryMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryMapper' defined in file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\com\cafe24\todaymemo\dao\CategoryMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [com/cafe24/todaymemo/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 53 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'mybatisSqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 63 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\ECS\git\todaymemo\todaymemo\target\classes\mapper\languageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at com.cafe24.todaymemo.config.MybatisConfig.mybatisSqlSessionFactory(MybatisConfig.java:31)
+	at com.cafe24.todaymemo.config.MybatisConfig$$EnhancerBySpringCGLIB$$1fc13374.CGLIB$mybatisSqlSessionFactory$2(<generated>)
+	at com.cafe24.todaymemo.config.MybatisConfig$$EnhancerBySpringCGLIB$$1fc13374$$FastClassBySpringCGLIB$$a4a4bb3b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.cafe24.todaymemo.config.MybatisConfig$$EnhancerBySpringCGLIB$$1fc13374.mybatisSqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 64 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 67; 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:263)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:81)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 77 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 요소 유형 "update"에 대한 "resultType" 속성을 선언해야 합니다.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.addDTDDefaultAttrsAndValidate(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
+	... 80 common frames omitted
+17:10:21.902 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:10:21.902 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:10:22.384 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.514 seconds (JVM running for 7849.687)
+17:10:47.547 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:10:47.547 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:10:48.006 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.501 seconds (JVM running for 7875.309)
+17:10:50.945 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:10:50.945 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:10:51.452 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.543 seconds (JVM running for 7878.755)
+17:11:04.846 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:11:04.846 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:11:05.434 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.628 seconds (JVM running for 7892.737)
+17:11:05.879 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+141. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:11:11.091 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+141. UPDATE 
+				tb_language
+			SET
+				lang_word='drift away',
+				lang_meaning='가버리다. 줄행랑치다',
+				lang_etc='성공!'
+			WHERE 
+				lang_idx = 2
+ {executed in 2 msec}
+17:11:13.370 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+141. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+17:11:15.673 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+141. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:12:56.077 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:12:56.077 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:12:56.569 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.536 seconds (JVM running for 8003.871)
+17:12:59.379 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:12:59.379 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:12:59.882 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.528 seconds (JVM running for 8007.184)
+17:13:25.107 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:13:25.107 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:13:25.615 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.534 seconds (JVM running for 8032.918)
+17:13:50.736 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:13:50.736 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:13:51.196 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.489 seconds (JVM running for 8058.499)
+17:14:12.278 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:14:12.278 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:14:12.848 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.6 seconds (JVM running for 8080.15)
+17:14:31.512 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:14:31.512 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:14:31.961 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.472 seconds (JVM running for 8099.264)
+17:14:40.164 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:14:40.164 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:14:40.671 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.529 seconds (JVM running for 8107.974)
+17:15:46.564 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:15:46.564 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:15:47.030 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.497 seconds (JVM running for 8174.334)
+17:16:57.160 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:17:28.403 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:17:30.162 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-27'
+		or
+			lang_reg_date = ('2021-04-27' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-27' - interval 144 day)) ;
+ {executed in 1 msec}
+17:17:38.939 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+17:17:41.828 [http-nio-80-exec-10] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-27'
+		or
+			lang_reg_date = ('2021-04-27' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-27' - interval 144 day)) ;
+ {executed in 1 msec}
+17:17:46.263 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-26'
+		or
+			lang_reg_date = ('2021-04-26' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-26' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-26' - interval 144 day)) ;
+ {executed in 1 msec}
+17:17:50.168 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-27'
+		or
+			lang_reg_date = ('2021-04-27' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-27' - interval 144 day)) ;
+ {executed in 0 msec}
+17:17:51.734 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-29'
+		or
+			lang_reg_date = ('2021-04-29' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-29' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-29' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-29' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-29' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-29' - interval 144 day)) ;
+ {executed in 0 msec}
+17:17:52.415 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-28'
+		or
+			lang_reg_date = ('2021-04-28' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-28' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-28' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-28' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-28' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-28' - interval 144 day)) ;
+ {executed in 1 msec}
+17:17:56.711 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-29'
+		or
+			lang_reg_date = ('2021-04-29' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-29' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-29' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-29' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-29' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-29' - interval 144 day)) ;
+ {executed in 0 msec}
+17:17:57.046 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-28'
+		or
+			lang_reg_date = ('2021-04-28' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-28' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-28' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-28' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-28' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-28' - interval 144 day)) ;
+ {executed in 0 msec}
+17:17:58.739 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:19:30.343 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:19:32.151 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-27'
+		or
+			lang_reg_date = ('2021-04-27' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-27' - interval 144 day)) ;
+ {executed in 0 msec}
+17:20:47.603 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:21:01.909 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+221. DELETE FROM tb_language WHERE lang_idx=2
+ {executed in 2 msec}
+17:21:01.910 [http-nio-80-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-80-exec-1] Exception processing template "/": Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+17:21:01.914 [http-nio-80-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+17:21:24.303 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Starting TodaymemoApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 5484 (C:\Users\ECS\git\todaymemo\todaymemo\target\classes started by ECS in C:\Users\ECS\git\todaymemo\todaymemo)
+17:21:24.303 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - No active profile set, falling back to default profiles: default
+17:21:24.782 [restartedMain] INFO  c.c.todaymemo.TodaymemoApplication - Started TodaymemoApplication in 0.502 seconds (JVM running for 8512.085)
+17:21:54.426 [http-nio-80-exec-4] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+231. SELECT 
+			member_id, member_pw, member_level, member_name
+		FROM tb_member
+ {executed in 1 msec}
+17:21:54.431 [http-nio-80-exec-4] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+231. SELECT 
+			menu_idx, menu_name, menu_url, menu_sort, menu_yn, menu_reg_id, menu_reg_date
+		FROM 
+			tb_category where menu_reg_id='id001'
+ {executed in 0 msec}
+17:21:56.926 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+231. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =11
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+17:21:58.652 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+231. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 0 msec}
+17:22:00.638 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+231. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-27'
+		or
+			lang_reg_date = ('2021-04-27' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-27' - interval 144 day)) ;
+ {executed in 1 msec}
+17:23:31.875 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+231. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:23:34.119 [http-nio-80-exec-9] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+231. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-27'
+		or
+			lang_reg_date = ('2021-04-27' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-27' - interval 144 day)) ;
+ {executed in 1 msec}
+17:24:08.355 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+231. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = curdate() 
+		or
+			lang_reg_date = (curdate() - interval 1 day)
+		or
+			lang_reg_date = (curdate() - interval 3 day)
+		or
+			lang_reg_date = (curdate() - interval 10 day)
+		or
+			lang_reg_date = (curdate() - interval 24 day)
+		or
+			lang_reg_date = (curdate() - interval 54 day)
+		or
+		 	lang_reg_date = (curdate() - interval 144 day)) ;
+ {executed in 1 msec}
+17:24:09.968 [http-nio-80-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+231. SELECT 
+			* 
+		FROM
+			 tb_language 
+		where 
+			lang_reg_id = 'id001'
+		and 
+			category_idx =10
+		and (
+			lang_reg_date = '2021-04-27'
+		or
+			lang_reg_date = ('2021-04-27' - interval 1 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 3 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 10 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 24 day)
+		or
+			lang_reg_date = ('2021-04-27' - interval 54 day)
+		or
+		 	lang_reg_date = ('2021-04-27' - interval 144 day)) ;
+ {executed in 0 msec}
