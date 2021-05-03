@@ -5,9 +5,9 @@
     <aside>
     	<div id="sidebar" class="nav-collapse ">
     		 <ul class="sidebar-menu" id="nav-accordion">
-	    		 <li style="color:#000000;">
-			    	<div style="margin-top:100px; margin-left:50px; ">
-			    		<table id ="calendar">
+	    		 <li>
+			    	<div style="margin-top: 100px;">
+			    		<table id ="calendar" style="color:black!important">
 							<tr>
 								<td align = "center" valign="middle"><label onclick="preMonth()" id="pre">&lt;</label></td>
 								<td colspan="5" id = "writeYM" align = "center" valign="middle">yyyy년 m월</td>
@@ -26,10 +26,11 @@
 			    	</div>
 	        	</li>
 	         		<th:block th:if="${session.SID!=null}" th:each="menu:${session.SMENU}">
-	         	 		<li><a class="categoryId" th:href="@{${menu.menuUrl}(idx=${menu.menuIdx})}" data-idx="${menu.menuIdx}">[[${menu.menuName}]]</a></li>
+	         	 		<li><a class="categoryId" th:href="@{${menu.menuUrl}(idx=${menu.menuIdx},categoryName=${menu.menuName})}" data-idx="${menu.menuIdx}">[[${menu.menuName}]]</a></li>
 	         		</th:block>
 				<li style="text-align:center;">
-	         		<button id="addBtn">+</button>
+	         		<button id="categoryAddBtn">+</button>
+	         		<button id="categoryDeleteBtn">-</button>
 	         	</li>
          	</ul>
  	    </div>
