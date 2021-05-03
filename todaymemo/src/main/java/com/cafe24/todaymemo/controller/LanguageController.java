@@ -26,7 +26,7 @@ public class LanguageController {
 		}
 	
 		//단어삭제
-		@RequestMapping(value="/ajax/deleteLanguage", method=RequestMethod.GET)
+		@RequestMapping(value="/ajax/deleteLanguage", method=RequestMethod.POST)
 		public @ResponseBody String deleteLanguage(@RequestParam(value="langIdx") int langIdx) {
 			System.out.println("단어삭제 컨트롤러 확인");
 			languageService.deleteLanguage(langIdx);
@@ -49,7 +49,7 @@ public class LanguageController {
 			
 			return "성공";
 		}
-		
+		//선택한 날짜의 단어 가져오기
 		@RequestMapping(value="/ajax/pickDate" , method= RequestMethod.POST)
 		public @ResponseBody List<LanguageDTO> getPickdDateLanguageList(@RequestParam(value="categoryIdx") int categoryIdx,
 																		@RequestParam(value="pickDate") String pickDate,
@@ -57,6 +57,8 @@ public class LanguageController {
 			
 			return languageService.getPickDate((String)session.getAttribute("SID"), categoryIdx,pickDate);
 		}
+		
+		//단어 추가
 		@RequestMapping(value="/ajax/addLanguage", method= RequestMethod.POST)
 		public @ResponseBody String addLanguage(@RequestParam(value="word") String word,
 												@RequestParam(value="meaning") String meaning,
@@ -76,18 +78,18 @@ public class LanguageController {
 			
 			return "성공";
 		}
+		
+	//메뉴 클릭 시 해당 카테고리의 당일날 외울 단어 가져오기
 	  @GetMapping("/language/{id}/{number}") 
 	  	public String getLanguageList(@PathVariable(name = "id") String id ,
 	  								  @PathVariable(name ="number") String number,
 	  								  @RequestParam(name="idx") int idx,
+	  								  @RequestParam(name="categoryName") String categoryName,
 	  								  Model model) {
-		  System.out.println("들어오나요?");
-		  System.out.println(id+"id가 모");
-		  System.out.println(number+"id가 모");
-		  System.out.println(idx+"<---카테고리 인덱스");
-		  
+
 		  model.addAttribute("word",languageService.getToday(id, idx));
 		  model.addAttribute("categoryIdx",idx);
+		  model.addAttribute("categoryName",categoryName);
 		  
 		  return "language/language";
 		  

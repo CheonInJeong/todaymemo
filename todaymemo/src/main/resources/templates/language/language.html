@@ -8,8 +8,9 @@
 		</th:block>
 		
 		<th:block layout:fragment="Contents">
-		<div style="margin:20px;">
+		<div style="margin:50px;">
 			<span id="day" style="font-size:30px; color:black;" ></span>
+			<span th:text="${categoryName}"></span>
 		</div>
 		
 		<!-- 단어 추가  -->
@@ -18,7 +19,7 @@
 		</th:block>
 		
 		<table class="table table-hover"> 
-			<thead>
+			<thead style="text-align:center;">
 				<tr>
 					<th>요일</th>
 					<th>단어/문장</th>
@@ -28,7 +29,7 @@
 					<th>삭제</th>
 				</tr>
 			</thead>	
-			<tbody id="languageBody">
+			<tbody id="languageBody" style="text-align: left;">
 			<tr th:if="${#lists.size(word)}>0" th:each="word:${word}">
 				<td th:text ="${word.langIdx}" style="display:none;" class="langIdx"></td>
 				<td th:text ="${word.langRegDate}"></td>
@@ -105,21 +106,9 @@
 				</script>
 				<script>
 				//단어수정
-				$(document).ready(function(){
+				$(document).on('click','.modifyBtn',function(){
 					
-					/* var modifyBtn =document.getElementsByClassName('modifyBtn');
-					
-					for(var i=0; i<modifyBtn.length; i++){
-						console.log(modifyBtn[i]);
-						modifyBtn[i].addEventListener('click',function(e){
-							console.log(i+"<----i");
-							var langIdx = document.getElementsByClassName('langIdx');
-							console.log(langIdx);
-							console.log(langIdx[i])
-						})
-					} */
-					$('.modifyBtn').click(function(){
-						console.log($('.modifyBtn').index(this));
+					console.log($('.modifyBtn').index(this));
 						var i = $('.modifyBtn').index(this);
 						var word = $('.word');
 						var meaning = $('.meaning');
@@ -135,18 +124,21 @@
 						if($('.modifyBtn').eq(i).attr('data-attr')==0){
 							$('.modifyBtn').eq(i).attr('data-attr','1');
 							//html()을 사용해서, input 박스로 바꿔주고 value 값은 text()를 통해서 가져옴
-							word.eq(i).html('<input type="text" value="'+word.eq(i).text()+'" class="word">');
-							meaning.eq(i).html('<input type="text" value="'+meaning.eq(i).text()+'" class="meaning">');
-							memo.eq(i).html('<input type="text" value="'+memo.eq(i).text()+'" class="memo">');
+							word.eq(i).html('<div class="word" contenteditable="true" style="text-decoration:underline;">'+word.eq(i).text()+'</div>');
+							meaning.eq(i).html('<div class="meaning" contenteditable="true" style="text-decoration:underline;">'+meaning.eq(i).text()+'</div>');
+							memo.eq(i).html('<div class="memo" contenteditable="true" style="text-decoration:underline;">'+memo.eq(i).text()+'</div>');
+							//word.eq(i).html('<input type="text" style="border:none;"value="'+word.eq(i).text()+'" class="word">');
+							//meaning.eq(i).html('<input type="text" value="'+meaning.eq(i).text()+'" class="meaning">');
+							//memo.eq(i).html('<input type="text" value="'+memo.eq(i).text()+'" class="memo">');
 						}else{		
 							//수정가능한 상태 data-attr = 1 이면 실행
 							//
 							$('.modifyBtn').eq(i).attr('data-attr','0');
-							var modifyWord = $('#languageBody tr input').eq(0).val();
-							var modifyMeaning = $('#languageBody tr input').eq(1).val();
-							var modifyMemo = $('#languageBody tr input').eq(2).val();
+							var modifyWord = $('#languageBody tr div').eq(0).text();
+							var modifyMeaning = $('#languageBody tr div').eq(1).text();
+							var modifyMemo = $('#languageBody tr div').eq(2).text();
 						
-							console.log(modifyWord+"<----이게 뭔데?")
+							console.log(modifyWord+"<---수정");
 							word.eq(i).text(modifyWord);
 							meaning.eq(i).text(modifyMeaning);
 							memo.eq(i).text(modifyMemo);
@@ -161,17 +153,13 @@
 								}
 							})//통신끝
 						}	
-					}) 
-				})
-				////단어수정끝
-				
-				</script>
-				<script>
+					}) ;
 				//단어 삭제 시작
-				 $('.deleteBtn').click(function(){
+				
+				$(document).on('click','.deleteBtn',function(){
 					console.log($('.deleteBtn').index(this));
 					var i = $('.deleteBtn').index(this);
-					console.log($('.langIdx').eq(i).text());
+					console.log($('.langIdx').eq(i).text()+"<---?");
 					var idx = $('.langIdx').eq(i).text();
 					
 					$.ajax({
@@ -179,9 +167,14 @@
 						method :'post',
 						data : {langIdx:idx},
 						success : function(data){
-							location.reload();
+							console.log($('.deleteBtn').eq(i).parent().parent())
+							$('.deleteBtn').eq(i).parent().parent().remove();
 						}
 					})
+					
+				});
+				
+				
 					
 				/*ajax javascript
 					var xhttp;
@@ -204,7 +197,7 @@
 					xhttp.send()
 					
 				*/
-				}); 
+				
 
 				</script>
 		
