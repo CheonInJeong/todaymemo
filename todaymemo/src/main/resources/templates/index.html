@@ -4,13 +4,86 @@
 	  layout:decorate="layout/default">
 
 		<th:block layout:fragment="customTitle">
-			<title>프로젝트 소개</title>
+			<title>Today Memo</title>
 		</th:block>
 		<th:block layout:fragment="Contents">
-		  <!--main content start-->
-			내용
-			
-		</th:block>
+		  <div th:if="${session.SID==null}">
+			  <div id="login-page">
+				    <div class="container">
+				      <form class="form-login" th:action="@{/member/login}" method="post">
+				        <h2 class="form-login-heading">sign in now</h2>
+				        <div class="login-wrap">
+				          <input type="text" class="form-control" placeholder="User ID" name="memberId" id="memberId" autofocus>
+				          <br>
+				          <input type="password" class="form-control" placeholder="Password" name="memberPw" id="memberPw">
+				          <label class="checkbox">
+				            <span class="pull-right">
+				           	 <a data-toggle="modal"> Forgot Password?</a>
+				            </span>
+				            </label>
+				          <button class="btn btn-theme btn-block" type="button" id="loginBtn"><i class="fa fa-lock"></i> SIGN IN</button>
+				          <hr>
+				          <div class="login-social-link centered">
+				            <p>or you can sign in via your social network</p>
+				            <div style="background-color: #FEE500; border-radius: 8px;">
+				            	<a href="https://kauth.kakao.com/oauth/authorize?client_id=5e99e08729091418bc20869069cfe597&redirect_uri=http://localhost:8090/kakaoLogin&response_type=code"><img th:src="@{/image/kakao_login_large_narrow.png}" alt="kakao login" style="width: 300px; height:65.86"></a>
+							</div>
+				          </div>
+				          <div class="registration">
+				            Don't have an account yet?<br/>
+				            <a class="" href="#">
+				              Create an account
+				              </a>
+				          </div>
+				        </div>
+				         </form>
+				        <!-- Modal -->
+				        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+				          <div class="modal-dialog">
+				            <div class="modal-content">
+				              <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				                <h4 class="modal-title">Forgot Password ?</h4>
+				              </div>
+				              <div class="modal-body">
+				                <p>Enter your e-mail address below to reset your password.</p>
+				                <input type="text" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+				              </div>
+				              <div class="modal-footer">
+				                <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+				                <button class="btn btn-theme" type="button">Submit</button>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				    </div>
+ 			 </div>
+  	</th:block>
+	
+	
 		<th:block layout:fragment="customScript">
+
+			
+			<script>
+				$('#loginBtn').click(function(){
+					$.ajax({
+						url : '/ajax/login',
+						type : 'post',
+						data : {memberId : $('#memberId').val(), memberPw : $('#memberPw').val()},
+						success : function(data){
+							if(data){
+								alert('성공');
+								location.href="/";
+							}else{
+								alert('아이디 혹은 비밀번호가 틀렸습니다.');
+								return false;
+							}
+						}
+					});
+				});
+				
+				
+			
+			</script>	
 		</th:block>
 </html>

@@ -8,7 +8,7 @@
 		</th:block>
 		
 		<th:block layout:fragment="Contents">
-		<div style="margin:50px;">
+		<div style="margin-left:50px;margin-bottom:10px;">
 			<span id="day" style="font-size:30px; color:black;" ></span>
 			<span th:text="${categoryName}"></span>
 		</div>
@@ -17,37 +17,116 @@
 		<th:block layout:fragment="addLanguage">
 			<div th:replace="fragments/addLanguage :: addLanguage"></div>
 		</th:block>
-		
-		<table class="table table-hover"> 
+			
+		<table class="table table-hover" style="margin: 10px;"> 
 			<thead style="text-align:center;">
-				<tr>
+				<tr id="theadTr">
 					<th>요일</th>
 					<th>단어/문장</th>
 					<th>뜻</th>
 					<th>메모</th>
-					<th>수정</th>
-					<th>삭제</th>
+					<th style="display:none;" id="modifyThead" >수정</th>
+					<th style="display:none;">삭제</th>
 				</tr>
 			</thead>	
 			<tbody id="languageBody" style="text-align: left;">
-			<tr th:if="${#lists.size(word)}>0" th:each="word:${word}">
+			<tr th:if="${#lists.size(word)}>0" th:each="word:${word}" class="tbodyTr">
 				<td th:text ="${word.langIdx}" style="display:none;" class="langIdx"></td>
 				<td th:text ="${word.langRegDate}"></td>
 				<td th:text ="${word.langWord}" class="word"></td>
 				<td th:text ="${word.langMeaning}" class="meaning"></td>
 				<td th:text ="${word.langEtc}" class="memo"></td>
-				<td><a class="modifyBtn" data-attr="0"><i class="glyphicon glyphicon-erase" ></i></a></td>
-				<td><a class="deleteBtn"><i class="glyphicon glyphicon-trash"></i></a></td>
+				<td style="display:none;"><a class="modifyBtn" data-attr="0"><i class="glyphicon glyphicon-erase" ></i></a></td>
+				<td style="display:none;"><a class="deleteBtn"><i class="glyphicon glyphicon-trash"></i></a></td>
 			</tr>
 			<tr th:unless="${#lists.size(word)}>0">
-				<td colspan="6">외울 단어가 없습니다.</td>
+				<td colspan="6" style="text-align: center;">단어를 입력해주세요.</td>
 			</tr>
 			</tbody>
 		</table>
+		
+		<div style="text-align:right;">
+			<button type="button" class="btn btn-xm" id="modifyBtn" data-attr="0">수정</button>
+			<button type="button" class="btn btn-xm" id="deleteBtn" data-attr="0">삭제</button>
+		</div>
 			
 		</th:block>
 		<th:block layout:fragment="customScript">
-		
+			<script>
+			//수정버튼 클릭시
+				$('#modifyBtn').click(function(){
+					console.log("나와라");
+					console.log($(this).attr('data-attr'));
+					if($(this).attr('data-attr')=='0'){
+						console.log("흠")
+						$('.modifyBtn').parent().css('display','');
+						$('#modifyThead').css('display','');
+						$(this).text('수정완료');
+						$(this).attr('data-attr',1);
+					}else{
+						$('.modifyBtn').parent().css('display','none');
+						$('#modifyThead').css('display','none');
+						$(this).text('수정');
+						$(this).attr('data-attr',0);
+					}
+				});
+				
+			//삭제버튼 클릭시
+				$(document).on('click', '#deleteBtn',function(){
+					if($('#deleteBtn').attr('data-attr')==0){
+						$('#theadTr').prepend('<th><input type="checkbox" name="checkboxTable" style="margin-right:5px;" id="allCheck"></th>');
+						$('.tbodyTr').each(function(){
+							console.log($('.tbodyTr').index(this));
+							var i = $('.tbodyTr').index(this);
+							$('.tbodyTr').eq(i).prepend('<td><input type="checkbox" name="checkboxTable" class="checkboxTable" style="margin-right:5px;" value="'+$('.langIdx').eq(i).text()+'"></td>');
+							console.log("체크박스");
+						})
+						//전체체크
+							$('#allCheck').click(function(){
+								if($('#allCheck').prop('checked')){
+			  					  $('.checkboxTable').prop('checked',true)  
+								}else{
+								    $('.checkboxTable').prop('checked',false);
+								}
+							});////전체체크끝
+						$('#deleteBtn').attr('data-attr',1);
+						$('#deleteBtn').text('삭제완료');
+					}else{
+						$('#deleteBtn').text('삭제');
+						var checkArray = [];
+						$('input:checkbox[name="checkboxTable"]:checked').each(function(){
+							var i = $('input:checkbox[name="checkboxTable"]:checked').index(this);
+							checkArray.push($('input:checkbox[name="checkboxTable"]:checked').eq(i).val())
+							console.log(checkArray);
+						})
+					
+						if(checkArray!=''){	//선택 된 단어가 있을 경우 삭제
+							
+							if (confirm("정말 삭제하시겠습니까??") == true){    //확인
+				    			$.ajax({
+									url : '/ajax/deleteLanguage',
+									type : 'post',
+									data : {checkArray : checkArray},
+									success : function(data){
+										$('input:checkbox[name="checkboxTable"]:checked').parent().parent().remove();
+										$('input:checkbox[name="checkboxTable"]').remove();
+									}
+								});  //ajax 끝
+		    					 
+		 					}else{   //취소
+		 						$('input:checkbox[name="deleteCheckBox"]').remove();
+		   				 		return false;
+							}
+						}else{ //선택 된 단어가 없을 경우
+							alert('삭제 할 단어를 선택해주세요.');
+							return false;
+						}
+						$('#deleteBtn').attr('data-attr',0);	
+					}
+				});
+				
+				
+			</script>
 			<script th:inline="javascript">
 				var categoryIdx = /*[[${categoryIdx}]]*/
 				//단어추가 시작
@@ -83,20 +162,20 @@
 							if(data!=""){
 								$('#languageBody').children().remove();
 								for(var i = 0 ; i<data.length;i++){
-									var tr = '<tr>';
+									var tr = '<tr class="tbodyTr">';
 										tr +='<td style="display:none" class="langIdx">'+data[i].langIdx+'</td>';
 										tr +='<td>'+data[i].langRegDate+'</td>';
 										tr +='<td class="word">'+data[i].langWord+'</td>'
 										tr +='<td class="meaning">'+data[i].langMeaning+'</td>'
 										tr +='<td class="memo">'+data[i].langEtc+'</td>'
-										tr +='<td><a class="modifyBtn" data-attr = "0"><i class="glyphicon glyphicon-erase" ></a></i></td>'
-										tr +='<td><a class="deleteBtn"><i class="glyphicon glyphicon-trash"></i></a></td>'
+										tr +='<td style="display:none;"><a class="modifyBtn" data-attr = "0"><i class="glyphicon glyphicon-erase" ></a></i></td>'
+										tr +='<td style="display:none;"><a class="deleteBtn"><i class="glyphicon glyphicon-trash"></i></a></td>'
 										tr +='</tr>';
 									$('#languageBody').append(tr);
 								}
 							}else{
 								$('#languageBody').children().remove();
-								var tr = '<tr><td colspan="4">해당일에 입력하신 단어가 없습니다.</td></tr>'
+								var tr = '<tr><td colspan="6" style="text-align:center;">단어를 입력해주세요.</td></tr>'
 								$('#languageBody').append(tr);
 						}
 					}

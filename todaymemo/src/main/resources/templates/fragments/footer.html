@@ -162,12 +162,42 @@
    	})	
    		//카테고리 삭제 처리
    		$(document).on('click','#categoryDeleteBtn',function(){
-			console.log("나와");
-			console.log($('.categoryId').parent().children());
-			var i = $('.categoryId').index(this);
-			console.log(i);
-			$('.categoryId').eq(i).prepend('<input type="checkbox" name="checked" style="margin-right:5px;" value="'+$('.categoryId').eq(i).attr('data-idx')+'">')
+			var session = /*[[${session.SMENU}]]*/
+			console.log(session);
+			if($('#categoryDeleteBtn').attr('data-attr')==0){
+				for(var i=0; i<session.length; i++){
+					$('.categoryId').eq(i).prepend('<input type="checkbox" name="deleteCheckBox" class="deleteCheckBox" style="margin-right:5px;" value="'+session[i].menuIdx+'">');
+					console.log($('.deleteCheckBox').eq(i).val());
+					console.log(session[i].menuIdx+"<----메뉴인덱스")
+				}
+				
+				$('#categoryDeleteBtn').attr('data-attr',1);
+			}else{
+					var checkArray = [];
+				$('input:checkbox[name="deleteCheckBox"]:checked').each(function(){
+					var i = $('input:checkbox[name="deleteCheckBox"]:checked').index(this);
+					checkArray.push($('input:checkbox[name="deleteCheckBox"]:checked').eq(i).val())
+				})
+				
+					if (confirm("정말 삭제하시겠습니까??") == true){    //확인
+		    			$.ajax({
+							url : '/ajax/deleteCategory',
+							type : 'post',
+							data : {checkArray : checkArray},
+							success : function(data){
+								$('input:checkbox[name="deleteCheckBox"]:checked').parent().parent().remove();
+								$('input:checkbox[name="deleteCheckBox"]').remove();
+								$('#categoryDeleteBtn').attr('data-attr',0);
+							}
+						});  //ajax 끝
+    					 
+ 					}else{   //취소
+ 						$('input:checkbox[name="deleteCheckBox"]').remove();
+   				 		return false;
+					}
+			}
 		})
+	
    		
   	 </script>
    
