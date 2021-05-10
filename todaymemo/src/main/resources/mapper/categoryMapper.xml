@@ -12,6 +12,14 @@
 		<result property="menuRegDate" 				column="menu_reg_date"/>
 	</resultMap>
 	
+	
+	<delete id="deleteCategoryWord" parameterType="int">
+		delete from tb_language where category_idx =${categoryIdx}
+	</delete>
+	
+	<delete id ="deleteCategory" parameterType="int">
+		delete from tb_category where menu_idx = ${categoryIdx}
+	</delete>
 
 	<insert id="addCategory" parameterType="CategoryDTO">
 		INSERT INTO 

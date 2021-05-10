@@ -2,37 +2,13 @@
 <html xmlns:th="http://www.tyhmeleaf.org">
  <!--header start-->
     <header class="header black-bg" th:fragment="headerFragments">
-    <div class="container-fluid">
-	    <div class="row">
-	    	<div class="col-lg-2 col-md-2 col-sm-2">
-			      <div class="sidebar-toggle-box col-lg-2 col-md-2 col-sm-2">
-			        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-			      </div>
-			      <a th:href="@{/}" class="logo col-lg-10 col-md-10 col-sm-10" ><b>TODAY<span>MEMO</span></b></a>
-			</div>
-	     
-	     <!-- <div class="nav notify-row" id="top_menu">--!>
-	        <!--  notification start -->
-	      <div class="col-lg-8 col-md-8 col-sm-8" style="margin-top:30px;">
-		  		<div style="text-align:left; display:inline;">
-		        	 <a th:href="@{/board}">게시판</a>
-		        	 <a th:href="@{/}">QnA</a>
-		  		</div>
-	      </div>
-	      
-	  	  <div style="text-align:right; margin-top:30px;" class="col-lg-2 col-md-2" >
-	          <th:block th:if="${session.SID!=null}">
-				<div>[[${session.SNAME}]] 님 로그인 중입니다.
-					<form th:action="@{/member/logout}" method="post" style="display: inline";>
-						<button class="btn btn-xs btn-warning" type="submit">로그아웃</button>
-					</form>
-				</div>
-	         </th:block>
-			  	<a th:if="${session.SID==null}" th:href="@{/member/signUp}">가입하기</a>
-				<a th:if="${session.SID==null}" th:href="@{/member/login}">로그인</a>
-	  	  </div>
-	     </div>
-	    </div>
-      </div>
+    	<div class="sidebar-toggle-box">
+    		<div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      	</div>
+	    <a th:href="@{/}" class="logo"><b>TODAYMEMO</b></a>
+      	<th:block th:if="${session.SID==null}">  
+			<a th:href="@{/member/signUp}" style="display: right!important;">가입하기</a>
+			<a th:href="@{/member/login}" style="display: right!important;" >로그인</a>
+		</th:block>
     </header>
 </html>

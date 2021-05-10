@@ -13,9 +13,15 @@
 		<result property="memberRegDate" 			column="member_reg_date"/>
 	</resultMap>
 	
-	<select id="getMemberInfo" resultMap ="memberResultMap">
+	<select id="getMember" resultMap="memberResultMap">
 		SELECT 
-			member_id, member_pw, member_level, member_name
+			member_id, member_pw, member_level, member_name, member_photo, member_phone, member_reg_date
+		FROM tb_member where member_id= #{memberId}
+	</select>
+	
+	<select id="getMemberList" resultMap ="memberResultMap">
+		SELECT 
+			member_id, member_pw, member_level, member_name,member_photo
 		FROM tb_member
 	</select>
 	<!-- 회원가입 -->

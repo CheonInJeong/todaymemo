@@ -17,7 +17,14 @@ public class CategoryService {
 	public CategoryService(CategoryMapper categoryMapper) {
 		this.categoryMapper = categoryMapper;
 	}
+	//카테고리 삭제
+	public void deleteCategory(int categoryIdx,HttpSession session) {
+		categoryMapper.deleteCategory(categoryIdx);
+		categoryMapper.deleteCategoryWord(categoryIdx);
+		session.setAttribute("SMENU", getMenuList((String)session.getAttribute("SID")));
+	}
 	
+	//카테고리추가
 	public void addCategory(CategoryDTO categoryDTO, HttpSession session) {
 		System.out.println(categoryDTO);
 		categoryMapper.addCategory(categoryDTO);
@@ -26,7 +33,7 @@ public class CategoryService {
 		
 		
 	}
-	
+	//해당아이디 카테고리 가져오기
 	public List<CategoryDTO> getMenuList(String loginId){
 		return categoryMapper.getCategoryList(loginId);
 	}

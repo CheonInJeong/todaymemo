@@ -25,13 +25,31 @@ public class LanguageController {
 			this.languageService = languageService;
 		}
 	
-		//단어삭제
+		/*//단어삭제
 		@RequestMapping(value="/ajax/deleteLanguage", method=RequestMethod.POST)
 		public @ResponseBody String deleteLanguage(@RequestParam(value="langIdx") int langIdx) {
 			System.out.println("단어삭제 컨트롤러 확인");
 			languageService.deleteLanguage(langIdx);
 			return "단어삭제성공";
+		}*/
+		
+		//단어 여러개 삭제
+
+		@RequestMapping(value="/ajax/deleteLanguage", method=RequestMethod.POST)
+		public @ResponseBody String deleteLanguage(@RequestParam(value="checkArray[]",required=false) int[] checkArray) {
+			
+			System.out.println(checkArray+"<---controller checkArray");
+			if(checkArray!=null) {
+				for(int categoryIdx : checkArray) {
+					System.out.println(categoryIdx+"<----categoryidx");
+					languageService.deleteLanguage(categoryIdx);
+				}
+			}
+			
+			return "성공";
 		}
+		
+		
 		
 		//단어수정
 		@RequestMapping(value="/ajax/modifyLanguage", method=RequestMethod.POST)
@@ -86,7 +104,7 @@ public class LanguageController {
 	  								  @RequestParam(name="idx") int idx,
 	  								  @RequestParam(name="categoryName") String categoryName,
 	  								  Model model) {
-
+	
 		  model.addAttribute("word",languageService.getToday(id, idx));
 		  model.addAttribute("categoryIdx",idx);
 		  model.addAttribute("categoryName",categoryName);

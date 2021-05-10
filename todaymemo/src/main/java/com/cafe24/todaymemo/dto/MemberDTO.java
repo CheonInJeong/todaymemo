@@ -9,7 +9,7 @@ public class MemberDTO {
 	private String memberPhone;
 	private String memberPhoto;
 	private int memberLevel;
-	private String member_reg_date;
+	private String memberRegDate;
 	public String getMemberId() {
 		return memberId;
 	}
@@ -52,18 +52,20 @@ public class MemberDTO {
 	public void setMemberLevel(int memberLevel) {
 		this.memberLevel = memberLevel;
 	}
-	public String getMember_reg_date() {
-		return member_reg_date;
+	public String getMemberRegDate() {
+		return memberRegDate;
 	}
-	public void setMember_reg_date(String member_reg_date) {
-		this.member_reg_date = member_reg_date;
+	public void setMemberRegDate(String memberRegDate) {
+		this.memberRegDate = memberRegDate;
 	}
 	@Override
 	public String toString() {
 		return "MemberDTO [memberId=" + memberId + ", memberPw=" + memberPw + ", memberName=" + memberName
 				+ ", memberEmail=" + memberEmail + ", memberPhone=" + memberPhone + ", memberPhoto=" + memberPhoto
-				+ ", memberLevel=" + memberLevel + ", member_reg_date=" + member_reg_date + "]";
+				+ ", memberLevel=" + memberLevel + ", memberRegDate=" + memberRegDate + "]";
 	}
+	
+	
 	
 	
 	

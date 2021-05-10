@@ -30,7 +30,7 @@
 	<select id="getPickDate" parameterType="map" resultMap="languageResultMap">
 	
 		SELECT 
-			* 
+			lang_idx, lang_word, lang_meaning, lang_etc, category_idx, lang_reg_id, replace(substring(lang_reg_date,6),'-','.') as lang_reg_date
 		FROM
 			 tb_language 
 		where 
@@ -67,7 +67,7 @@
 	<!-- 당일 등록한 단어-->
 	<select id="getToday" parameterType="map" resultMap="languageResultMap">
 		SELECT 
-			* 
+			lang_idx, lang_word, lang_meaning, lang_etc, category_idx, lang_reg_id, replace(substring(lang_reg_date,6),'-','.') as lang_reg_date 
 		FROM
 			 tb_language 
 		where 
